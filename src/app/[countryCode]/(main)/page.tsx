@@ -5,7 +5,7 @@ import { getRegion } from "@lib/data/regions"
 import { listProducts } from "@lib/data/products"
 
 export const metadata: Metadata = {
-  title: "tienda Lore Skin",
+  title: "Tienda Lore Skin",
   description:
     "El sitio ideal para tus productos de marca",
 }
