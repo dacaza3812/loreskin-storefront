@@ -48,7 +48,7 @@ const ProfileEmail: React.FC<MyInformationProps> = ({ customer }) => {
   return (
     <form action={formAction} className="w-full">
       <AccountInfo
-        label="Email"
+        label="Correo electrónico"
         currentInfo={`${customer.email}`}
         isSuccess={successState}
         isError={!!state.error}
@@ -56,9 +56,9 @@ const ProfileEmail: React.FC<MyInformationProps> = ({ customer }) => {
         clearState={clearState}
         data-testid="account-email-editor"
       >
-        <div className="grid grid-cols-1 gap-y-2">
+          <div className="grid grid-cols-1 gap-y-2">
           <Input
-            label="Email"
+            label="Correo electrónico"
             name="email"
             type="email"
             autoComplete="email"

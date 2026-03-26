@@ -10,7 +10,7 @@ const Hero = () => {
             level="h1"
             className="text-3xl leading-10 text-ui-fg-base font-normal"
           >
-            Ecommerce Starter Template
+            Tienda Lore Skin
           </Heading>
           
         </span>
@@ -19,7 +19,7 @@ const Hero = () => {
           target="_blank"
         >
           <Button variant="secondary">
-            View on GitHub
+            Descargar App en Apklis
             <Github />
           </Button>
         </a>
