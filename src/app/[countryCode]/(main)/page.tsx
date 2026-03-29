@@ -1,5 +1,7 @@
 import { Metadata } from "next"
 
+export const dynamic = "force-dynamic"
+
 import HomeTemplate from "@modules/home/templates"
 import { getRegion } from "@lib/data/regions"
 import { listProducts } from "@lib/data/products"

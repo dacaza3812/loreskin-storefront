@@ -49,8 +49,14 @@ export const listProducts = async ({
     ...(await getAuthHeaders()),
   }
 
+  const cacheOptions = (await getCacheOptions("products")) as { tags?: string[] }
   const next = {
-    ...(await getCacheOptions("products")),
+    ...cacheOptions,
+    tags: [
+      ...(cacheOptions.tags || []),
+      "products",
+      "product-list",
+    ],
   }
 
   const categoryHandle = queryParams?.category_handle
